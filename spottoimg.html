@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <head>
     <title>webpage :D</title>
+    <script src="./spottoimg.js"></script>
+    <style>
+        /* no margins whatsoever */
+        table img {
+            margin: 0px;
+            padding: 0px;
+            font-size: 0px;
+            border-collapse: collapse;
+            border-spacing: 0px;
+        }
+    </style>
 </head>
 <body>
     <!--
@@ -12,7 +23,18 @@
 
         /* do like a get img from url */
         /* https://stackoverflow.com/questions/6887183/how-to-take-screenshot-of-a-div-with-javascript */
+        /* spotify embed link: https://open.spotify.com/oembed?url= */
     -->
+    <span>paste song links here <span id="count"></span></span><br>
+    <textarea id="list" rows="10" cols="60"></textarea><br>
+    <button id="start" type="button">to image</button>
+    <!-- <input id="start" type="submit" name="button" value="to image" /> -->
+    <hr>
+    <div>
+        output here (press the button)
+        <img src="">
+    </div>
+    <hr>
     <span>wip</span>
     <li><a href="./index.html">back</a></li>
 </body>
