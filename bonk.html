@@ -18,8 +18,8 @@
 				image.src = 'res/frame1.jpg'; 
 			}
 
-      button.onpointerdown = startBonk()
-			button.onpointerup = endBonk()
+      button.onpointerdown = function() { startBonk() }
+			button.onpointerup = function() { endBonk() }
 			document.onkeydown = function (e) {
 				if (e.code == 'Space') { startBonk(); }
 			}
